@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Graficadora de Vectores</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo de la Calculadora de Vectores">
+            <h1>Calculadora de Vectores</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="info">
+            <h2>Vectores</h2>
+            <p>Un vector es una magnitud que tiene tanto magnitud como dirección. En matemáticas y física, los vectores son muy utilizados para representar desplazamientos, fuerzas, velocidades, etc.</p>
+        </section>
+
+        <section id="conceptos">
+            <h2>Conceptos Importantes</h2>
+            <ul>
+                <li>Magnitud de un Vector 2D: La magnitud de un vector en 2D se obtiene aplicando el teorema de Pitágoras a sus componentes: \( |\mathbf{v}| = \sqrt{v_x^2 + v_y^2} \).</li>
+                <li>Magnitud de un Vector 3D: En 3D, la magnitud se calcula de manera similar: \( |\mathbf{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2} \).</li>
+                <li>Producto Cruz: El producto cruz de dos vectores en 3D se calcula aplicando una regla específica y da como resultado un nuevo vector perpendicular a los vectores iniciales.</li>
+                <li>Ángulo entre Vectores: El ángulo entre dos vectores se calcula usando el producto escalar y las magnitudes de los vectores: \( \theta = \arccos\left(\frac{\mathbf{v} \cdot \mathbf{w}}{|\mathbf{v}| \cdot |\mathbf{w}|}\right) \).</li>
+            </ul>
+        </section>
+
+        <head>
+            <title>Vectores 2D y 3D</title>
+            <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+            </script>
+        </head>
+        <body>
+            <h1>Vectores en 2D y 3D</h1>
+            <h2>Vectores en 2D</h2>
+            <p>Un vector en 2D se representa con dos componentes: una en la dirección del eje x (horizontal) y otra en la dirección del eje y (vertical). Generalmente, se denotan como \( \mathbf{v} = \begin{bmatrix} v_x \\ v_y \end{bmatrix} \), donde \(v_x\) es la componente en x y \(v_y\) es la componente en y.</p>
+            <p>La magnitud del vector \( \mathbf{v} \) en 2D se calcula mediante la fórmula:</p>
+            <p>\( | \mathbf{v} | = \sqrt{v_x^2 + v_y^2} \)</p>
+        
+            <h2>Vectores en 3D</h2>
+            <p>Un vector en 3D tiene tres componentes: una en la dirección del eje x, otra en la dirección del eje y y una tercera en la dirección del eje z (vertical). Se denotan como \( \mathbf{v} = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix} \), donde \(v_x\) es la componente en x, \(v_y\) es la componente en y y \(v_z\) es la componente en z.</p>
+            <p>La magnitud del vector \( \mathbf{v} \) en 3D se calcula mediante la fórmula:</p>
+            <p>\( | \mathbf{v} | = \sqrt{v_x^2 + v_y^2 + v_z^2} \)</p>
+        
+            <h2>Operaciones con vectores</h2>
+            <ul>
+                <li>Suma de Vectores: La suma de dos vectores se realiza sumando sus componentes. \( \mathbf{v} + \mathbf{w} = \begin{bmatrix} v_x + w_x \\ v_y + w_y \end{bmatrix} \) en 2D, o \( \mathbf{v} + \mathbf{w} = \begin{bmatrix} v_x + w_x \\ v_y + w_y \\ v_z + w_z \end{bmatrix} \) en 3D.</li>
+                <li>Resta de Vectores: La resta de dos vectores se realiza restando sus componentes. \( \mathbf{v} - \mathbf{w} = \begin{bmatrix} v_x - w_x \\ v_y - w_y \end{bmatrix} \) en 2D, o \( \mathbf{v} - \mathbf{w} = \begin{bmatrix} v_x - w_x \\ v_y - w_y \\ v_z - w_z \end{bmatrix} \) en 3D.</li>
+                <li>Producto Escalar: El producto escalar de dos vectores se calcula multiplicando sus componentes correspondientes y sumándolos. \( \mathbf{v} \cdot \mathbf{w} = v_x \cdot w_x + v_y \cdot w_y \) en 2D, o \( \mathbf{v} \cdot \mathbf{w} = v_x \cdot w_x + v_y \cdot w_y + v_z \cdot w_z \) en 3D.</li>
+                <li>Producto cruz (solo en 3D): \( \mathbf{v} \times \mathbf{w} = \begin{bmatrix} v_y \cdot w_z - v_z \cdot w_y \\ v_z \cdot w_x - v_x \cdot w_z \\ v_x \cdot w_y - v_y \cdot w_x \end{bmatrix} \).</li>
+            </ul>
+            <h2>Ejemplos</h2>
+            <h3>Ejemplo 1</h3>
+            <p>Consideremos dos vectores en 3D:</p>
+            <p>\( \mathbf{v} = \begin{bmatrix} 1 \\ -2 \\ 3 \end{bmatrix} \) y \( \mathbf{w} = \begin{bmatrix} 4 \\ 0 \\ -2 \end{bmatrix} \).</p>
+            <p>Calculamos el producto escalar de los vectores:</p>
+            <p>\( \mathbf{v} \cdot \mathbf{w} = 1 \cdot 4 + (-2) \cdot 0 + 3 \cdot (-2) = -2 \).</p>
+
+            <h3>Ejemplo 2</h3>
+            <p>Consideremos dos vectores en 2D:</p>
+            <p>\( \mathbf{v} = \begin{bmatrix} -3 \\ 7 \end{bmatrix} \) y \( \mathbf{w} = \begin{bmatrix} 2 \\ 5 \end{bmatrix} \).</p>
+            <p>Calculamos la resta de los vectores:</p>
+            <p>\( \mathbf{v} - \mathbf{w} = \begin{bmatrix} -3 - 2 \\ 7 - 5 \end{bmatrix} = \begin{bmatrix} -5 \\ 2 \end{bmatrix} \).</p>
+
+            <h3>Ejemplo 3: Producto escalar</h3>
+            <p>Consideremos dos vectores en 3D:</p>
+            <p>\( \mathbf{v} = \begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix} \) y \( \mathbf{w} = \begin{bmatrix} 1 \\ 4 \\ -2 \end{bmatrix} \).</p>
+            <p>Calculamos el producto escalar de los vectores:</p>
+            <p>\( \mathbf{v} \cdot \mathbf{w} = 2 \cdot 1 + (-1) \cdot 4 + 3 \cdot (-2) = -2 \).</p>
+
+            <h3>Ejemplo 4: Producto cruz</h3>
+            <p>Consideremos dos vectores en 3D:</p>
+            <p>\( \mathbf{v} = \begin{bmatrix} 3 \\ -2 \\ 1 \end{bmatrix} \) y \( \mathbf{w} = \begin{bmatrix} 2 \\ 1 \\ 4 \end{bmatrix} \).</p>
+            <p>Calculamos el producto cruz de los vectores:</p>
+            <p>\( \mathbf{v} \times \mathbf{w} = \begin{bmatrix} (-2) \cdot 4 - 1 \cdot 1 \\ 1 \cdot 2 - 3 \cdot 4 \\ 3 \cdot 1 - (-2) \cdot 2 \end{bmatrix} = \begin{bmatrix} -9 \\ -10 \\ 7 \end{bmatrix} \).</p>
+            
+        </body>
+
+        <section id="menu">
+            <h2>Menú Calculadora</h2>
+            <button id="vector2d" class="menu-button">Vectores 2D</button>
+            <button id="vector3d" class="menu-button">Vectores 3D</button>
+        </section>
+
+        <section id="content">
+            <!-- Aquí se mostrará el contenido dependiendo de la elección del usuario -->
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
