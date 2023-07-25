@@ -348,10 +348,10 @@ function graficarVector3D() {
 
     // Dibujar ejes
     ctx.beginPath();
-    ctx.moveTo(0, centerY);
-    ctx.lineTo(canvas.width, centerY);
     ctx.moveTo(centerX, 0);
     ctx.lineTo(centerX, canvas.height);
+    ctx.moveTo(0, centerY);
+    ctx.lineTo(canvas.width, centerY);
     ctx.strokeStyle = "#333";
     ctx.stroke();
 
@@ -360,7 +360,7 @@ function graficarVector3D() {
     ctx.moveTo(centerX, centerY);
     ctx.lineTo(centerX + x1 * escala, centerY - y1 * escala);
     ctx.lineTo(centerX + x1 * escala + x2 * escala, centerY - y1 * escala - z2 * escala);
-    ctx.lineTo(centerX + x1 * escala + x2 * escala + x1 * escala, centerY - y1 * escala - z2 * escala - y1 * escala);
+    ctx.lineTo(centerX + x1 * escala + x2 * escala + z1 * escala, centerY - y1 * escala - z2 * escala - y2 * escala);
     ctx.strokeStyle = "#ff0000";
     ctx.lineWidth = 2;
     ctx.stroke();
